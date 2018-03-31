@@ -137,6 +137,19 @@ default['java']['jdk']['8']['x86_64']['checksum'] = '62b215bdfb48bace523723cdbb2
 default['java']['jdk']['8']['i586']['url'] = 'https://edelivery.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-i586.tar.gz'
 default['java']['jdk']['8']['i586']['checksum'] = '2012d1c82f74bf830a80dfb5462f555b22271f74e4fc4a5779c7f459dcd0cabf'
 
+# jdk9 attributes
+
+default['java']['jdk']['9']['bin_cmds'] = %w(appletviewer apt ControlPanel extcheck idlj jar jarsigner java javac
+                                             javadoc javafxpackager javah javap javaws jcmd jconsole jcontrol jdb
+                                             jdeps jhat jinfo jjs jmap jmc jps jrunscript jsadebugd jstack
+                                             jstat jstatd jvisualvm keytool native2ascii orbd pack200 policytool
+                                             rmic rmid rmiregistry schemagen serialver servertool tnameserv
+                                             unpack200 wsgen wsimport xjc)
+
+# x86_64
+default['java']['jdk']['9']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz'
+default['java']['jdk']['9']['x86_64']['checksum'] = '90c4ea877e816e3440862cfa36341bc87d05373d53389ec0f2d54d4e8c95daa2'
+
 default['java']['oracle']['jce']['enabled'] = false
 default['java']['oracle']['jce']['8']['url'] = 'https://edelivery.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip'
 default['java']['oracle']['jce']['8']['checksum'] = 'f3020a3922efd6626c2fff45695d527f34a8020e938a49292561f18ad1320b59'
