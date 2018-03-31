@@ -30,7 +30,7 @@ def parse_app_dir_name(url)
   file_name = uri.path.split('/').last
   # funky logic to parse oracle's non-standard naming convention
   # for jdk1.6
-  if file_name =~ /^(jre|jdk|server-jre).*$/
+  if file_name =~ /^(jre|jdk|server-jre)-[^.]+-.*$/
     major_num = file_name.scan(/\d/)[0]
     update_token = file_name.scan(/u(\d+)/)[0]
     update_num = update_token ? update_token[0] : '0'
@@ -45,6 +45,7 @@ def parse_app_dir_name(url)
   else
     app_dir_name = file_name.split(/(.tgz|.tar.gz|.zip)/)[0]
     app_dir_name = app_dir_name.split('-bin')[0]
+    app_dir_name = app_dir_name.split('_linux')[0]
   end
   [app_dir_name, file_name]
 end
