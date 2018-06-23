@@ -147,8 +147,21 @@ default['java']['jdk']['9']['bin_cmds'] = %w(appletviewer apt ControlPanel extch
                                              unpack200 wsgen wsimport xjc)
 
 # x86_64
-default['java']['jdk']['9']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz'
+default['java']['jdk']['9']['x86_64']['url'] = 'http://download.oracle.com/otn/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz'
 default['java']['jdk']['9']['x86_64']['checksum'] = '90c4ea877e816e3440862cfa36341bc87d05373d53389ec0f2d54d4e8c95daa2'
+
+# jdk10 attributes
+
+default['java']['jdk']['10']['bin_cmds'] = %w(appletviewer apt ControlPanel extcheck idlj jar jarsigner java javac
+                                             javadoc javafxpackager javap javaws jcmd jconsole jcontrol jdb
+                                             jdeps jinfo jjs jmap jmc jps jrunscript jsadebugd jstack
+                                             jstat jstatd jvisualvm keytool native2ascii orbd pack200 policytool
+                                             rmic rmid rmiregistry schemagen serialver servertool tnameserv
+                                             unpack200 wsgen wsimport xjc)
+
+# x86_64
+default['java']['jdk']['10']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz'
+default['java']['jdk']['10']['x86_64']['checksum'] = 'ae8ed645e6af38432a56a847597ac61d4283b7536688dbab44ab536199d1e5a4'
 
 default['java']['oracle']['jce']['enabled'] = false
 default['java']['oracle']['jce']['8']['url'] = 'https://edelivery.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip'

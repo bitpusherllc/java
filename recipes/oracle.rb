@@ -48,6 +48,10 @@ when '9'
   tarball_url = node['java']['jdk']['9'][arch]['url']
   tarball_checksum = node['java']['jdk']['9'][arch]['checksum']
   bin_cmds = node['java']['jdk']['9']['bin_cmds']
+when '10'
+  tarball_url = node['java']['jdk']['10'][arch]['url']
+  tarball_checksum = node['java']['jdk']['10'][arch]['checksum']
+  bin_cmds = node['java']['jdk']['10']['bin_cmds']
 end
 
 if tarball_url =~ /oracle.com/
