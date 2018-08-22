@@ -160,8 +160,8 @@ default['java']['jdk']['10']['bin_cmds'] = %w(appletviewer apt ControlPanel extc
                                              unpack200 wsgen wsimport xjc)
 
 # x86_64
-default['java']['jdk']['10']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz'
-default['java']['jdk']['10']['x86_64']['checksum'] = 'ae8ed645e6af38432a56a847597ac61d4283b7536688dbab44ab536199d1e5a4'
+default['java']['jdk']['10']['x86_64']['url'] = 'http://download.oracle.com/otn-pub/java/jdk/10.0.2+13/19aef61b38124481863b1413dce1855f/jdk-10.0.2_linux-x64_bin.tar.gz'
+default['java']['jdk']['10']['x86_64']['checksum'] = '6633c20d53c50c20835364d0f3e172e0cbbce78fff81867488f22a6298fa372b'
 
 default['java']['oracle']['jce']['enabled'] = false
 default['java']['oracle']['jce']['8']['url'] = 'https://edelivery.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip'
